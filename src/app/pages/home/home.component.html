@@ -1,0 +1,15 @@
+<app-cabecera></app-cabecera>
+<main>
+
+    <div class="slider">
+      <video #video (canplay)="video.play()" (loadedmetadata)="video.muted = true" muted loop playsinline autoplay src="assets/img/Pexels Videos 4098.mp4"></video>
+    </div>
+    
+    <section class="slider__texto">
+      <div class="centrado">
+        <h2 class="slider__h2">Auxi López Pérez de Gracia</h2>
+        <p class="slider__p">Frontend developer</p>
+        <p class="slider__phrase">"Programmers are responsible for creating what people dream of"</p>
+      </div>
+    </section>
+</main>

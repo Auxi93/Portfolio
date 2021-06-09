@@ -1,0 +1,9 @@
+@keyframes aparecerdown{
+    from{
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+    }
+}

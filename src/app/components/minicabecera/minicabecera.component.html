@@ -1,0 +1,8 @@
+<div class="slider__intro" 
+    [ngClass]="{'backgroundMini': seccion === 'works', 'backgroundMini2': seccion === 'skills', 'backgroundMini3': seccion === 'contact' }">
+    
+    <h2 class="slider__h2"  
+        [ngClass]="{'letterBlack': seccion === 'contact'|| seccion === 'about'|| seccion === 'skills' }">
+        {{titulo}}
+    </h2>  
+</div>

@@ -1,0 +1,46 @@
+<app-cabecera
+  [seccion]="'contact'">
+</app-cabecera>
+
+<main class="main">
+  <app-minicabecera
+    [titulo]=" 'Contact' "
+    [seccion]="'contact'">
+  </app-minicabecera>
+    <section class="slider__formulary">
+      <div class="centrado">
+        <div class="slider__bigBox">
+          
+            <form action="https://formspree.io/f/myybplvk" method="POST">
+            
+            <div class="slider__information">
+              <label>
+                Name:
+                <input type="text" name="name" placeholder="Name" required/>
+              </label>
+              <label>
+                Last name:
+                <input type="text" name="last-name" placeholder="Last name" />
+              </label>
+              <label>
+                Email:
+                <input type="text" name="_replyto" placeholder="Email"  required/>
+              </label>
+            </div>
+
+            <div class="slider__message">
+              <label>
+                Message:
+                <textarea name="message"></textarea>
+              </label>
+            </div>
+            
+            <div class="slider__sent">
+              <button class="slider__enviar" type="submit">Send</button>
+            </div>
+        
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>

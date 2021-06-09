@@ -1,0 +1,209 @@
+@import "mixins.scss", "keyframes.scss", "variables.scss";
+.slider__header {
+  width: 100%;
+  padding: 2em 0em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  .centrado {
+    width: 90%;
+    @include flexible(row, nowrap, flex-end, center, auto);
+  }
+  .slider__h1 {
+    font-weight: 800;
+    font-size: 1.5em;
+    position: relative;
+    transition: all 0.5s ease;
+    &.activo {
+      color: $blanco;
+    }
+  }
+  .slider__icono {
+    width: 50px;
+    height: 50px;
+    text-shadow: 0px 2px 3px #4d4d4d;
+    border: 2px solid $blanco;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    cursor: pointer;
+    z-index: 3;
+
+    &.change {
+      border: 2px solid $negro;
+
+      .raya {
+        background: $negro;
+      }
+    }
+    &.changeColor {
+      border: 2px solid $negro;
+      color: $negro;
+      .raya {
+        background: $negro;
+      }
+    }
+  }
+
+  .raya {
+    width: 60%;
+    height: 3px;
+    background-color: $blanco;
+    border-radius: 20px;
+    position: absolute;
+    left: 25%;
+    transition: all 0.5s ease;
+    z-index: 3;
+  }
+  .activo.slider__icono {
+    border: 2px solid $negro;
+    top: 100%;
+  }
+  .activo .raya {
+    background-color: $negro;
+  }
+  .raya.top {
+    transform-origin: right;
+    top: 25%;
+  }
+  .raya.middle {
+    width: 50%;
+    top: calc(50% - 1.5px);
+    transform-origin: left;
+  }
+  .raya.down {
+    width: 25%;
+    bottom: 20%;
+    left: auto;
+    right: 25%;
+  }
+  .activo .raya.top {
+    width: 55%;
+    top: 22%;
+    left: 20%;
+    transform: rotate(-45deg);
+  }
+  .activo .raya.middle {
+    width: 36%;
+    top: 25%;
+    left: 20%;
+    transform: rotate(45deg);
+  }
+  .activo .raya.down {
+    transform: rotate(45deg);
+  }
+}
+.velo {
+  width: 0%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(40px);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 0.2s ease;
+
+  &.blanco {
+    transform: scaleX(1);
+    transform: translateZ(10px);
+  }
+  .centrado {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slider__ul {
+    @include flexible(column, wrap, center, center, auto);
+    padding: 90px;
+  }
+  .slider__li {
+    font-family: "Cinzel Decorative", cursive;
+    font-weight: 700;
+    font-size: 2.4em;
+    color: $negro;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 2s ease 1s;
+    margin-bottom: 70px;
+    cursor: pointer;
+    a:hover {
+      color: $rosaOscuro;
+    }
+  }
+}
+.velo.activo {
+  width: 100%;
+  .este {
+    color: $rosaOscuro;
+  }
+}
+.activo .slider__li {
+  opacity: 1;
+  transform: translateY(0);
+  &.one {
+    transition-delay: 0.1s;
+  }
+  &.two {
+    transition-delay: 0.2s;
+  }
+  &.three {
+    transition-delay: 0.3s;
+  }
+  &.four {
+    transition-delay: 0.4s;
+  }
+  &.five {
+    transition-delay: 0.5s;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .slider__header {
+    .slider__icono {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .slider__ul {
+    .slider__li {
+      font-size: 2em;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .slider__header {
+    .slider__icono {
+      width: 45px;
+      height: 45px;
+    }
+    .activo.slider__icono {
+      border: 2px solid $negro;
+    }
+  }
+  .slider__ul {
+    .slider__li {
+      font-size: 1.5em;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__header {
+    .slider__icono {
+      width: 35px;
+      height: 35px;
+      padding: 5px;
+    }
+    .raya {
+      height: 2px;
+    }
+  }
+  .slider__ul {
+    .slider__li {
+      font-size: 1em;
+    }
+  }
+}

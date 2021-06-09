@@ -1,0 +1,24 @@
+<header class="slider__header">
+  <div class="centrado">
+    <div class="slider__icono"
+      [class.change]="change_icon"
+      [ngClass]="{'changeColor': seccion === 'about'|| seccion ==='contact'|| seccion ==='skills', 'activo': VeloBlanco}"
+    (click)="ponerVeloBlanco()" >
+      <div class="raya top"></div>
+      <div class="raya middle"></div>
+      <div class="raya down"></div>
+    </div>
+  </div>
+  <div class="velo blanco" [ngClass]="{'activo': VeloBlanco}">
+    <ul class="slider__ul">
+      <li class="slider__li {{item.clase}}"
+        (click)="ponerVeloBlanco()"
+      *ngFor="let item of cabecera">
+        <a [ngClass]="{'este': esActivo(item.ruta)}"
+        (click)="viajar(item.ruta)">{{item.texto}} </a>
+      </li>
+
+    </ul>
+  </div>
+</header>
+

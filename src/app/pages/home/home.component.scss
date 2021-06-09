@@ -1,0 +1,89 @@
+@import "mixins.scss", "keyframes.scss", "variables.scss";
+
+.slider__main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.centrado {
+  // background-color: red;
+  height: 80vh;
+  @include flexible(column, wrap, center, center, auto);
+  position: relative;
+  z-index: 2;
+}
+.slider__texto {
+  .slider__h2 {
+    font-family: "Cinzel Decorative", cursive;
+    font-weight: 700;
+    font-size: 3.57em;
+    color: $blanco;
+    text-transform: uppercase;
+    text-align: center;
+    animation: aparecerdown 1s ease 1 both 1s;
+  }
+  .slider__p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    color: $blanco;
+    text-align: center;
+    animation: aparecerdown 1s ease 1 both 1.5s;
+  }
+  .slider__phrase {
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+    color: $blanco;
+    text-align: center;
+    animation: aparecerdown 1.5s ease 1 both 2s;
+  }
+}
+.slider video {
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 1328px) {
+  .slider__texto {
+    .slider__h2 {
+      font-size: 2.8em;
+    }
+    .slider__p {
+      font-size: 2em;
+    }
+    .slider__phrase {
+      font-size: 1.5em;
+    }
+  }
+}
+@media screen and (max-width: 960px) {
+  .slider__texto {
+    .slider__h2 {
+      font-size: 2.5em;
+    }
+    .slider__p {
+      font-size: 1.5em;
+    }
+    .slider__phrase {
+      font-size: 1em;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__texto {
+    .slider__h2 {
+      font-size: 1.3em;
+      padding: 0.4em;
+    }
+    .slider__p {
+      font-size: 1.2em;
+    }
+    .slider__phrase {
+      font-size: 0.9em;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="255" height="255" viewBox="0 0 255 255">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_10" data-name="Rectángulo 10" width="111" height="111" transform="translate(500 908)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_19" data-name="Grupo 19" transform="translate(-514 -211)">
+    <g id="Grupo_12" data-name="Grupo 12" transform="translate(63 -70)">
+      <g id="Grupo_8" data-name="Grupo 8" transform="translate(451 281)">
+        <rect id="Rectángulo_9" data-name="Rectángulo 9" width="255" height="255" fill="#f2f2f2"/>
+      </g>
+    </g>
+    <g id="Grupo_14" data-name="Grupo 14" transform="translate(40 -715)">
+      <g id="Enmascarar_grupo_2" data-name="Enmascarar grupo 2" transform="translate(45 69)" clip-path="url(#clip-path)">
+        <path id="css3" d="M7.063,0h97.125L95.354,99.729,55.519,111,15.906,99.724ZM86.1,20.41,25.146,20.4l.985,12.127,46.828.009L71.78,45.094H41.07l1.11,11.9H70.772L69.079,73.288,55.62,77.006,41.949,73.26,41.079,63.5H29.008l1.341,17.829,25.276,7.876,24.85-7.076L86.1,20.415Z" transform="translate(499.875 908)"/>
+      </g>
+      <text id="CSS3-2" data-name="CSS3" transform="translate(564 1119)" fill="#4d4d4d" font-size="30" font-family="Raleway-Bold, Raleway" font-weight="700"><tspan x="0" y="0">CSS3</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+@import "mixins.scss", "keyframes.scss", "variables.scss";
+main {
+  min-height: 100vh;
+  background-color: $rosaClaro;
+}
+.slider__skills {
+  max-width: 1100px;
+  margin: auto;
+  .slider__h2 {
+    font-family: "Cinzel Decorative", cursive;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: $blanco;
+    text-shadow: 0px 2px 3px $sombra;
+    @include flexible(row, nowrap, center, center, auto);
+  }
+  .slider__gallery {
+    width: 100%;
+    margin: 3em 0 0;
+  }
+  .centrado {
+    @include flexible(row, wrap, center, center, auto);
+  }
+  .slider__img {
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
+    box-shadow: 3px 3px 4px #bababa;
+  }
+}
+@media screen and (max-width: 1328px) {
+  .slider__skills {
+    max-width: 1100px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .slider__gallery .slider__img {
+    width: calc(100% / 2 - 3em);
+    margin: 1.5em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__skills .slider__img {
+    width: 80%;
+  }
+}

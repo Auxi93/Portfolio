@@ -1,0 +1,51 @@
+@import 'mixins.scss' , 'keyframes.scss', 'variables.scss';
+
+.slider__intro {
+    position: relative;
+    z-index: 2;
+    min-height: 200px;
+    &.backgroundMini{
+        background: url("/assets/img/Portfolio.png");
+        background-position: center;
+        background-size: cover;
+    }
+    &.backgroundMini2{
+        background: url("/assets/img/Habilidades.png");
+        background-position: inherit;
+        background-size: cover;
+    }
+    &.backgroundMini3{
+        background: url("/assets/img/Contacto.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+}
+.slider__h2 {
+    font-family: "Cinzel Decorative", cursive;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: $blanco;
+    @include flexible(row, wrap, center, center, auto);
+    padding-top: 2em;
+    &.letterBlack{
+        color: $negro;
+    }
+}
+@media screen and (max-width: 1030px){
+    .slider__h2{
+        font-size: 2.3em;
+    }
+}
+@media screen and (max-width: 960px){
+    .slider__h2{
+        font-size: 2em;
+    }
+  
+}
+@media screen and (max-width: 480px){
+    .slider__h2{
+        font-size: 1.7em;
+        padding-top: 2.4em;
+    }
+  
+}

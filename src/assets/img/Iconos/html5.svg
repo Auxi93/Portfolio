@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="255" height="255" viewBox="0 0 255 255">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_8" data-name="Rectángulo 8" width="109" height="109" transform="translate(0.198 -0.286)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_18" data-name="Grupo 18" transform="translate(-139 -211)">
+    <g id="Grupo_6" data-name="Grupo 6" transform="translate(139 211)">
+      <rect id="Rectángulo_9" data-name="Rectángulo 9" width="255" height="255" fill="#f2f2f2"/>
+    </g>
+    <g id="Grupo_7" data-name="Grupo 7" transform="translate(212.802 262.286)">
+      <g id="Enmascarar_grupo_1" data-name="Enmascarar grupo 1" transform="translate(0)" clip-path="url(#clip-path)">
+        <path id="html5" d="M10.938,0h95.123L97.409,97.673,58.395,108.712,19.6,97.669ZM42.786,44.164,41.735,31.853l45.564.014,1.042-11.877-59.683-.014,3.162,36.283H73.157L71.68,71.777,58.5,75.419,45.114,71.75l-.852-9.558H32.444l1.495,18.893L58.5,87.654l24.365-6.536,3.37-36.949H42.786Z" transform="translate(-3.88 0.263)"/>
+      </g>
+      <text id="HTML5-2" data-name="HTML5" transform="translate(6.198 144.714)" fill="#4d4d4d" font-size="28" font-family="Raleway-Bold, Raleway" font-weight="700"><tspan x="0" y="0">HTML5</tspan></text>
+    </g>
+  </g>
+</svg>

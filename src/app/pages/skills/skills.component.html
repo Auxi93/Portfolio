@@ -1,0 +1,20 @@
+<app-cabecera
+  [seccion]="'skills'">
+</app-cabecera>
+<main>
+<app-minicabecera
+  [titulo]=" 'Skills' "
+  [seccion]="'skills'"
+  >
+</app-minicabecera>
+    <section class="slider__skills">
+      <div class="slider__gallery">
+        <div class="centrado">        
+          <img class="slider__img"
+          *ngFor="let item of listaHabilidades"
+           src="{{ item.src }}" alt="{{item.alt}} ">
+        </div>
+      
+      </div>
+    </section>
+</main>

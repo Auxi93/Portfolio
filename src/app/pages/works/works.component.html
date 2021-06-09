@@ -1,0 +1,25 @@
+<app-cabecera
+  [seccion]="'works'">
+</app-cabecera>
+<app-minicabecera  
+  [titulo]=" 'Portfolio' "
+  [seccion]="'works'">
+</app-minicabecera>
+
+<main>
+  <section class="slider__works">
+      <article class="slider__article {{item.clase}} "
+      *ngFor="let item of trabajosWeb ">
+        <img class="slider__img" src="{{item.img}}" alt="{{item.alt}}" />
+        <div class="slider__info">
+          <h3 class="slider__h3">{{item.h3}}</h3>
+          <p class="slider__p"> {{item.p}} </p>
+          <span class="slider__span" *ngIf="item.span">{{item.span}}</span>
+          <a class="slider__btn" target="_blank" *ngIf="item.url" href="{{item.url}}" >{{item.btn}}</a>
+        
+        </div>
+      </article>
+  </section>
+</main>
+
+
