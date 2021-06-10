@@ -63,7 +63,16 @@ export class DatosService {
       url:'https://www.solspanishcenter.com/',
     },
     {
-      clase:'type2 hidden',
+      clase:'type2',
+      h3 : 'María Castellano', 
+      img:'/assets/img/PortfolioMaria.png',
+      alt: 'Maria Castellano',
+      p:'This page is a portfolio of a graphic designer who specializes in web design and branding.',
+      btn: 'Visit the website', 
+      url:'http://movidagames.com/',
+    },
+    {
+      clase:'type1 hidden',
       h3 : 'Make Good Art', 
       img:'/assets/img/MGA.jpg',
       alt: 'MGA',
