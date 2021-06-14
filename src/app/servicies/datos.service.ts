@@ -69,7 +69,7 @@ export class DatosService {
       alt: 'Maria Castellano',
       p:'This page is a portfolio of a graphic designer who specializes in web design and branding.',
       btn: 'Visit the website', 
-      url:'http://movidagames.com/',
+      url:'https://mariacastellano.000webhostapp.com',
     },
     {
       clase:'type1 hidden',
